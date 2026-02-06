@@ -1,10 +1,10 @@
 import './Footer.css'
 
-export default function Footer() 
+export default function Footer(props) 
 {
   return (
     <footer className='footer'>
-      <p>© 2026 My React Website</p>
+      <p>© {props.year[2]} {props.company.name}</p>
     </footer>
   )
 }
