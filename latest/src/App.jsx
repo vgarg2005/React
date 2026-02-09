@@ -7,9 +7,14 @@ export default function App() {
   const comp = {name:"KIET", location:"Ghaziabad", EstYear: "1990"};
   return (
     <div>
-      <Header title="Its my React App"/>
-      <Header title="Thanks"/>
+      <Header title="My first React App" color="red" year="2026"/>
+      <Header title="Lets's explore FSD together"/>
       <h1>Hello</h1>
+      <card>
+        <p>Product: </p>
+        <p>Description: </p>
+        <p>Price: </p>
+      </card>
       <Footer year={yr} company={comp}/>
     </div>
   )

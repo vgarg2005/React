@@ -1,14 +1,14 @@
 import './Header.css'
 
-export default function Header({title}) 
+export default function Header({card}) 
 {
   return (
     <header className='navigation'>
-      <h1>{title}</h1>
+      {card}
     <nav>
-        <a href="#">Home </a>
-        <a href="#">Address </a>
-        <a href="#">Contact </a>
+      <a href="#">Home </a>
+      <a href="#">Address </a>
+      <a href="#">Contact </a>
     </nav>
     </header>
   )
