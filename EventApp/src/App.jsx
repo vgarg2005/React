@@ -1,9 +1,13 @@
 import './App.css'
 import EventToDo from './EventToDo'
+import Search from './Search'
 
 function App() {
   return (
-    <EventToDo />
+    <div>
+      <EventToDo />
+      <Search />
+    </div>
   )
 }
 
