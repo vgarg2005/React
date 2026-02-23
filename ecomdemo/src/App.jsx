@@ -1,11 +1,13 @@
 import { useState } from "react";
 import Header from './Components/Header';
 import ProductList from "./Components/ProductList";
-import Cart from "./Components/Cart";
+import Cart from './Components/Cart';
+import './App.css'
 
 export default function App() {
   const [cart,setCart]=useState([]);
   const [totalAmt,setAmt]=useState(0);
+  const [search,setSearch]=useState("");
   const products= [
     {
       id: 1,
@@ -26,24 +28,27 @@ export default function App() {
       image: "https://honikon.cz/contents/event/kansyasai/?106868987040600"
     }
   ];
-
+  const filteredProducts = products.filter((product)=>product.name.toLowerCase().includes(search.toLowerCase()));
   function addToCart(product) {
     setCart([...cart,product]);
     setAmt(totalAmt+product.price);
   }
-
-  function removeFromCart() {
-    const updatedCart = cart.filter(item => item.id !== id);
+  
+  function removeFromCart(index) {
+    const updatedCart = cart.filter((_,i)=>i !== index);
     setCart(updatedCart);
   }
 
   return(
     <div>
-      <Header cartCount={cart.length}/>
+      <Header cartCount={cart.length} 
+      search={search}
+      setSearch={setSearch} />
       <ProductList products={products}
-      addToCart={addToCart}
-      removeFromCart={removeFromCart}/>
-      <Cart totalAmt={totalAmt} />
+      addToCart={addToCart} />
+      <Cart totalAmt={totalAmt} 
+      cart={cart}
+      removeFromCart={removeFromCart} />
     </div>
   )
 }

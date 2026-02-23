@@ -1,13 +1,18 @@
-export default function Cart({totalAmt, cart, removeFromCart}) {
+export default function Cart({totalAmt,cart,removeFromCart})
+{
   return(
-    <div>
-      <h4>Cart: </h4>
-      {/* {cart.map((element, index) => 
-      <span>
-        {element.price} {element.name}
-      </span>
-      <button>Remove From Cart</button>)} */}
-      <p>Total amount: {totalAmt}</p>
+    <div className="cart">
+      <h2>Your cart : </h2>
+      {cart.map((item,index)=>(
+        <div key={index} className="cart-item">
+          <img src={item.image} alt={item.name}/>
+          <span>{item.name}-{item.price}</span>
+          <button onClick={()=>removeFromCart(index)}>
+            Remove
+          </button>
+        </div>
+      ))}
+      <h3>total cart amount: {totalAmt}</h3>
     </div>
-  );
+  )
 }

@@ -7,9 +7,6 @@ export default function ProductCard({product, addToCart, removeFromCart}) {
       <button onClick={()=>addToCart(product)}>
         Add To Cart
       </button>
-      <button onClick={()=>removeFromCart}>
-        Remove From Cart
-      </button>
     </div>
   );
 }
