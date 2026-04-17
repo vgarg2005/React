@@ -1,0 +1,30 @@
+.history-page h1 {
+  color: #2d3a8c;
+  margin-bottom: 8px;
+}
+
+.history-page p {
+  color: #555;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.clear-history-btn {
+  background: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 11px 18px;
+  cursor: pointer;
+}
+
+.clear-history-btn:hover {
+  background: #c6433f;
+}

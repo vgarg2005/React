@@ -1,0 +1,54 @@
+.history-section {
+  margin-top: 20px;
+}
+
+.history-section h2 {
+  color: #2d3a8c;
+  margin-bottom: 16px;
+}
+
+.empty-history {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  color: #666;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.history-card {
+  background: white;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 14px;
+  border-left: 5px solid #5a67d8;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.history-card p {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.history-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.history-top h3 {
+  color: #2d3a8c;
+}
+
+.delete-btn {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #e15353;
+}

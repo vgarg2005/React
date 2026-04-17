@@ -1,0 +1,44 @@
+.about-page {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.about-card {
+  background: white;
+  max-width: 850px;
+  padding: 35px 28px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-card h1 {
+  color: #2d3a8c;
+  margin-bottom: 18px;
+}
+
+.about-card p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.about-features {
+  margin-top: 20px;
+  background: #f7f9fd;
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.about-features h3 {
+  color: #2d3a8c;
+  margin-bottom: 10px;
+}
+
+.about-features ul {
+  padding-left: 20px;
+}
+
+.about-features li {
+  margin-bottom: 8px;
+}

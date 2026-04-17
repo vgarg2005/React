@@ -1,0 +1,38 @@
+.trends-page h1 {
+  color: #2d3a8c;
+  margin-bottom: 10px;
+}
+
+.trends-subtext {
+  color: #555;
+  margin-bottom: 22px;
+}
+
+.trend-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.trend-card {
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.trend-card h3 {
+  color: #2d3a8c;
+  margin-bottom: 10px;
+}
+
+.trend-card p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.wide-card {
+  background: #eef3ff;
+}

@@ -1,0 +1,18 @@
+.disclaimer-box {
+  margin-top: 25px;
+  background: #fff4d8;
+  border-left: 6px solid #f0ad4e;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.disclaimer-box h3 {
+  color: #9a5b00;
+  margin-bottom: 8px;
+}
+
+.disclaimer-box p {
+  color: #5f4a1f;
+  line-height: 1.6;
+}
